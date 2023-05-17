@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>     
+    <link rel="stylesheet" href="../css/Flight booking.css">
+  </head>
+  <body>
+
+     <!-- HEADER -->
+  <div id="main">  
+  
+<h1 id="welcome">WELCOME TO DOMESTIC AIRLINES</h1>            
+  <header id="header">
+          <img id="logo" src="../img/worldflight.png" alt="No image" height="65px" width="120px"><h1 id="rs">RS<h3 id="airways">Airways</h3></h1>
+       <nav id="nav">   
+         <ul id="art1">
+          <li class="list"> <a href="#airimage" id="a_1" class="ankers">Home </a>         </li>
+
+          <li class="list"> <a href="#route" id="a_2" class="ankers">routes</a></li>
+
+          <li class="list"> <a href="#ticketbooking" id="a_3" class="ankers">Ticket-booking</a> </li>
+
+          <li class="list"> <a href="#aboutpage" id="a_4" class="ankers">About</a></li>
+         </ul>
+      </nav>  
+      
+      <div id="login"><i id="user" class="fa-solid fa-user-plus"></i>&nbsp;&nbsp;&nbsp;<p id="log">Login & Sign-up</p></div>
+      
+      <button id="logged" class="logsign">Logged-in &nbsp;&nbsp;&nbsp;<i id="check" class="fa-solid fa-user-check"></i></button>
+
+      <button id="signed" class="logsign">Signed &nbsp;&nbsp;&nbsp;<i id="check2" class="fa-solid fa-user-check"></i></button>
+    </header>
+   
+
+
+    <article id="art2">
+      <p id="login_under" class="logs">login</p>
+      <p id="Sign-up" class="logs">sign-up</p>
+      </article>
+            
+              <!-- LOGIN -->
+    <div id="logmain">
+      <div id="openlogin">
+        <form id="inlogin">
+            <h1 id="logpage">LOGIN</h1>
+             
+            <label class="label" for="Username">Username</label>
+             
+            <input  id="input1" class="input" type="text" placeholder="Enter username">
+             <label class="label" for="password">Password</label>
+            
+             <input id="input1_2" class="input" type="password" placeholder="Enter password" solid>
+            <button id="under_login" type="button" onclick="return loginclick()">Login</button>
+             
+            <a id="forget" href="#">Forget password</a>
+            
+           
+        </form>
+       
+        <p id="logsuccess">Login successfully!</p>
+       
+        <button id="exitlog">Back to home</button>
+        <i id="xmark1" class="fa-solid fa-circle-xmark fa-2"></i>
+       
+      </div>
+            
+  </div> 
+                     <!-- //SIGN-UP  -->
+   <div id="logmain2">
+     <div id="openlogin2">
+       <form id="inlogin2">
+           <h1 id="logpage2">SIGN-UP</h1>
+            
+           <label class="label2" for="Username">Email</label>
+            <input id="input2_1" class="input2" type="text" placeholder="Enter your email">
+            <label class="label2" for="password">Password</label>
+            <input id="input2_2" class="input2" type="password" placeholder="Enter password">
+            <button id="under_login2" type="button">Create account</button>
+           <a id="forget2" href="#">Already have an account?</a>
+
+
+       </form>
+       
+      <p id="signupsuccess2">Account created successfully!</p>
+       
+       <button id="exitlog2">Back to home</button>
+       <i id="xmark2" class="fa-solid fa-circle-xmark fa-2"></i>
+     </div>
+   </div>
+
+ 
+                 <!-- ROUTE -->
+    <div id="bigdiv">
+       <div id="airimage"></div>
+      
+      <hr id="hr" color="black">
+      <div id="route" class="routecontainer">
+       <h2 id="routeh2">routes demo</h2>
+       <div class="boxcontainer">
+        
+        <section class="routesec">
+          <article><img class="topimg" src="../img/chennai2.jpg" alt="No image"></article> <br>
+            <h2 class="destination">chennai <i class="fa-solid fa-arrow-right-arrow-left"></i> Mumbai</h2> <br>
+            <img class="bottomimg" src="../img/mumbai.jpg" alt="No image">
+          </section>
+
+        <section class="routesec">
+          <article><img class="topimg" src="../img/taj mahal.jpg" alt="No image"></article> <br>
+          <h2 class="destination">Delhi <i class="fa-solid fa-arrow-right-arrow-left"></i> Kolkatta</h2> <br>
+          <img class="bottomimg" src="../img/kolkatta.jpg" alt="No image">
+        </section>
+
+        <section class="routesec">
+        <article><img class="topimg" src="../img/Trichy_rockfort_temple_with_kaveri_bridge.jpg" alt="No image"></article> <br>
+          <h2 class="destination">Trichy <i class="fa-solid fa-arrow-right-arrow-left"></i> Coimbatore</h2> <br>
+          <img class="bottomimg" src="../img/coimbatore.png" alt="No image">
+        </section>
+
+        <section class="routesec">
+          <article><img class="topimg" src="../img/meenakshi amman temple.jpg" alt="No image"></article> <br>
+          <h2 class="destination">Madurai <i class="fa-solid fa-arrow-right-arrow-left"></i> Chennai</h2> <br>
+          <img class="bottomimg" src="../img/central4.jpg" alt="No image">
+        </section>
+
+        <section id="lastroute" class="routesec">
+          <article><img class="topimg" src="../img/kolkatta.jpg" alt="No image"></article> <br>
+          <h2 class="destination">Kolkatta <i class="fa-solid fa-arrow-right-arrow-left"></i> Chennai</h2> <br>
+          <img class="bottomimg" src="../img/central3.jpg" alt="No image">
+        </section>    
+         
+      </div>
+      <p id="pass">*Routes can be change according to passenger's preference</p>
+         <p></p>
+      </div> <!--FOR GRIDCONTAINER-->
+       <hr id="hr" color="black">
+
+          <!-- Ticket-Booking -->
+      <div id="ticketbooking"> 
+        <h2 id="bookh2">Ticket-Booking</h2>
+        <section id="innerbook">
+          
+          <section id="radios">
+          
+            <article id="oneradio" > 
+            <i class="fa-solid fa-suitcase-rolling"></i>&nbsp;&nbsp;
+            <label for="oneway" style="cursor: pointer;">One-way</label>
+            </article>
+           
+            <article id="roundradio" onclick="roundtrip()">
+            <i class="fa-solid fa-suitcase-rolling"></i>&nbsp;
+            <label for="roundtrip" style="cursor: pointer;">round-trip</label>
+            </article>
+
+        </section>
+         
+            <!--INNERBOOKING-->
+      <section id="fromtomaingrid">
+        
+        <fieldset id="fromborder" >
+          <legend>From<i class="fa-solid fa-plane-departure"></i>
+          </legend>
+          <select name="from" id="selectfrom">
+            <option value="" disabled  selected>Select city</option>
+            <option value="chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Trichy">Trichy</option>
+            <option value="Kolkatta">Kolkatta</option>
+          </select>
+        </label>  
+      </form>
+      </fieldset>
+      <i id="centerfont" class="fa-solid fa-arrow-right-arrow-left fa-2" style="padding-top:10px;"></i> 
+
+      <fieldset id="toborder">
+          <legend>destination<i class="fa-solid fa-plane-arrival"></i>
+          </legend>
+          <select name="to" id="selectto">
+            <option value="" disabled  selected>Select city</option>
+            <option value="chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Trichy">Trichy</option>
+            <option value="Kolkatta">Kolkatta</option>
+          </select>
+      </fieldset>
+
+      <fieldset id="date">
+        <legend>departure</legend>
+        <input id="dateinput" type="date">
+      </fieldset>
+
+    <section class="under">  
+      <fieldset id="adult">
+        <legend>Adults</legend>
+        <input id="adultinput" type="number" placeholder="(Aged-12+yrs)" min="1" max="10" minlength="2" maxlength="2">
+      </fieldset><p id="underadult1" class="inputunder">10 Members only</p>
+    </section>
+        </section> <!--FROMTOMAIN-->
+      <section id="passengerssec">
+
+<section  class="under">      
+          <fieldset id="child">
+          <legend>Children</legend>
+          <input id="childinput" type="number" placeholder="(Aged 2-12yrs)" min="1" max="4" minlength="1" maxlength="1">
+        </fieldset><p id="childunder1" class="inputunder">4 Members only</p>
+</section>
+<section class="under">      
+  <fieldset id="infants">
+          <legend>infants</legend>
+          <input id="infantsinput" type="number" placeholder="(below 2yrs)" min="1" max="2" minlength="1" maxlength="1">
+        </fieldset><p class="inputunder">2 Members only</p>
+</section>
+        <fieldset id="travellers">
+          <legend>Total-travellers</legend>
+          <input id="travellersinput" type="number" placeholder="Enter total" min="1" max="35" minlength="2" maxlength="2">
+        </fieldset>
+
+        <fieldset id="classes">
+          <legend>class</legend>
+          <select name="forclass" id="classoption">
+            <option value="" disabled  selected>select class</option>
+            <option>economy</option>
+            <option >premium economy</option>
+            <option>business</option>
+            <option>first class</option>
+            <option>VIP class</option>
+           </select>
+        </fieldset>
+      </section>
+
+         <section id="ph_total">      
+          <fieldset id="phno">
+          <legend>Phone-no</legend>
+          <label for="phnum"><input name="phnum" id="phnoinput" type="text" placeholder="Enter number" minlength="10" maxlength="10"></label>
+        </fieldset>
+
+        <fieldset id="name">
+          <legend>Name</legend>
+          <input name="name" id="nameinput" type="text" placeholder="Enter your name" minlength="20" maxlength="20">
+        </fieldset>
+      </section>
+   
+      <center>
+  
+        <input id="booktheticket" type="button" value="BOOK TICKET" onclick="return check()">
+      </center>
+ </section>
+               <!--BOOKING TICKET-2-->
+               <!--BOOKING TICKET-2-->
+               <!--BOOKING TICKET-2-->
+
+ <section id="innerbook2">
+          
+  <section id="radios2">
+  
+    <article id="oneradio2" onclick="oneway2()"> 
+      <i class="fa-solid fa-suitcase-rolling"></i>
+      &nbsp;
+    <label for="oneway2" style="cursor: pointer;">One-way</label>
+    </article>
+   
+    <article id="roundradio2">
+      <i class="fa-solid fa-suitcase-rolling"></i>&nbsp;
+    <label for="roundtrip2" style="cursor: pointer;">round-trip</label>
+    </article>
+
+</section>
+             
+    <!--INNERBOOKING-->
+<section id="fromtomaingrid2">
+
+<fieldset id="fromborder2" >
+  <legend>From<i class="fa-solid fa-plane-departure"></i>
+  </legend>
+  <select name="from2" id="selectfrom2">
+    <option value="" disabled  selected>Select city</option>
+    <option value="chennai">Chennai</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Coimbatore">Coimbatore</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Madurai">Madurai</option>
+    <option value="Trichy">Trichy</option>
+    <option value="Kolkatta">Kolkatta</option>
+  </select>
+</label>  
+</form>
+</fieldset>
+<i id="centerfont2" class="fa-solid fa-arrow-right-arrow-left fa-2" style="padding-top:10px;"></i> 
+
+<fieldset id="toborder2">
+  <legend>destination<i class="fa-solid fa-plane-arrival"></i>
+  </legend>
+  <select name="to2" id="selectto2">
+    <option value="" disabled  selected>Select city</option>
+    <option value="chennai">Chennai</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Coimbatore">Coimbatore</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Madurai">Madurai</option>
+    <option value="Trichy">Trichy</option>
+    <option value="Kolkatta">Kolkatta</option>
+  </select>
+</fieldset>
+
+<fieldset id="date2">
+  <legend>departure</legend>
+  <input id="dateinput2" type="date">
+  </fieldset>
+
+<fieldset id="returndate2">
+<legend>return date</legend>
+<input id="returndateinput2" type="date">
+</fieldset>
+
+</section> <!--FROMTOMAIN-->
+
+<section id="passengerssec2">
+  <section id="under2">
+<fieldset id="adult2">
+<legend>Adults</legend>
+<input id="adultinput2" type="number" placeholder="(Aged-12+yrs)" min="1" max="10" minlength="2" maxlength="2">
+</fieldset><p id="inputunderadult2" class="inputunder2">10 Members only</p>
+</section>
+
+<section id="under2">
+<fieldset id="child2">
+  <legend>Children</legend>
+  <input id="childinput2" type="number" placeholder="(Aged 2-12yrs)" min="1" max="5" minlength="1" maxlength="1">
+</fieldset><p class="inputunder2">4 Members only</p>
+</section>
+
+<section id="under2">
+  <fieldset id="infants2">
+  <legend>infants</legend>
+  <input id="infantsinput2" type="number" placeholder="(below 2yrs)" min="1" max="3" minlength="1" maxlength="1">
+</fieldset><p class="inputunder2">2 Members only</p>
+</section>
+
+<fieldset id="travellers2">
+  <legend>Total-travellers</legend>
+  <input id="travellersinput2" type="number" placeholder="Enter total" min="1" max="20" minlength="2" maxlength="2">
+</fieldset>
+
+
+</section>
+
+<section id="ph_total2">
+<fieldset id="classes2">
+  <legend>class</legend>
+  <select name="forclass2" id="classoption2">
+    <option value="" disabled  selected>select class</option>
+    <option>economy</option>
+    <option>premium economy</option>
+    <option>business</option>
+    <option>first class</option>
+    <option>VIP class</option>
+   </select>
+</fieldset>
+     
+  <fieldset id="phno2">
+  <legend>Phone-no</legend>
+  <label for="phnum2"><input name="phnum2" id="phnoinput2" type="tel" placeholder="Enter number"  maxlength="10"></label>
+</fieldset>
+
+<fieldset id="name2">
+  <legend>Name</legend>
+  <input name="name2" id="nameinput2" type="text" placeholder="Enter your name" minlength="20" maxlength="20">
+</fieldset>
+
+</section>
+
+
+<center>
+<input id="booktheticket2" type="button" value="BOOK TICKET" onclick="return check2()">
+</center>
+--
+</section>
+
+</div> <!--BIGDIV-->
+
+            <!-- PLS LOGIN -->
+          <div id="pls"><p id="plslogin">Please Login or Sign-up for booking</p>
+          </div>
+
+    <div id="finalticket">
+      <section id="innerfinal">
+          <h1 id="yourtic">YOUR TICKET</h1>   
+         
+      <section id="innerbox">
+        <p id="namefinal" class="ticdetails"></p>
+        <p id="mblno" class="ticdetails"></p>
+        <p id="ticketnumber" class="ticdetails"></p>
+        <p id="fromfinal" class="ticdetails"></p>
+        <p id="tofinal" class="ticdetails"></p>
+        <p id="datefinal" class="ticdetails"></p>
+        <p id="returndatefinal" class="ticdetails"></p>
+        <p id="adultfinal" class="ticdetails"></p>
+        <p id="childfinal" class="ticdetails"></p>
+        <p id="infantfinal" class="ticdetails"></p>
+        <p id="totalfinal" class="ticdetails"></p>
+        <p id="classfinal" class="ticdetails"></p>
+
+
+<button id="download">Take a screenshot
+</button>   
+     </section>
+      </section>
+    </div>
+<hr>
+    <div id="aboutpage">
+      <h1 id="abouth1">our page</h1>
+      <section id="aboutlogo">
+        <img id="logo1" src="../img/worldflight.png" alt="No image" height="150px" width="230px">
+        <article id="airs"><h1 id="rs2">RS</h1><h3 id="airways2">Airways</h3></article>
+
+        <article id="notes">
+          <p><h3 style="color:red; margin-top: -2.5px; text-decoration: underline;">Note:</h3>This website project made by "@SUBARATH".Which is model website  that help's user can book airline tickets.In future going to improve this website for future devolopments</p>
+         </article>
+
+         <article id="follow"><h1 style="text-transform: none; color: black; letter-spacing:1px;">For enquiry call:</h1> <i id="phonecall" class="fa-solid fa-phone"></i>  <p style="text-decoration:underline;letter-spacing:2px;">7397066856</p></article>
+
+         <article id="followmore"><h1 style="text-decoration: underline; color: white;">Follow me on</h1></article>
+         <article id="fonts" ><i style="color: rgb(255,0,83);" class="fa-brands fa-instagram"></i>&nbsp;&nbsp;<i style="color: blue;" class="fa-brands fa-twitter"></i></article> 
+         <a id="lastmail" href="@subarathrju1122@gmail.com">@subarathraju1122@gmail.com</a>
+      </section>
+
+
+    </div>
+     <!-- MAIN--></div>
+ 
+    
+
+                     <!-- BOOTSTRAP -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/6103c04a53.js" crossorigin="anonymous"></script>
+    <script src="../js/Flight booking.js"></script>
+  </body>
+</html>
+
+
+

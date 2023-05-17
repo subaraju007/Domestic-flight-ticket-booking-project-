@@ -1,0 +1,1933 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    text-transform: capitalize;  
+}
+
+body{
+    height:100vh;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+           background:#dddddd;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(60deg,
+    #3f5efb,#aa076b);
+}
+
+#main{
+    background:linear-gradient(190deg,
+    #3f5efb,#aa076b);
+}
+
+
+#header{
+    position: fixed;
+    height:60px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background:linear-gradient(to right,#aa076b,#4e4376);
+    /* background-color: rgb(114,46,249); */
+    box-shadow: 0px 0px 10px 1px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+#nav{
+    position: absolute;
+    margin-left:300px;    
+    /* margin-top: 16px; */
+    left: 0px;
+}
+
+#rs{
+    font-size:38px;
+    letter-spacing:4px;
+    font-weight:bolder;
+    color:yellow;
+    text-shadow:3px 3px #222;
+    font-family: 'Bruno Ace', cursive; 
+    margin-left: -20px; 
+}
+
+#airways{
+     font-size: 20px;
+     letter-spacing:4px;
+     font-weight:bold;
+     margin-top:18px;
+     margin-left:5px;
+     color: #fff;
+}
+
+
+.list{
+       display: inline-block;
+       align-items: center;
+       padding: 0px 20px;
+       list-style: none;
+       transition:0.6s;
+       border: 1px solid rgba(255,255,255,0.7);
+       border-radius:25px;
+       height: 36px;
+       padding-top: 4px;
+}
+
+
+
+#art1{
+    word-spacing:50px;
+}
+
+
+.ankers{
+       color: rgb(255,255,255,.9);
+       transition: all 0.4s ease 0.1s;
+       text-decoration: none;
+       letter-spacing:1.5px;
+       font-size: 17px;
+       font-weight: bolder;
+       text-shadow: 1px 1px black;
+}
+
+.list:hover{
+    background: rgba(0,0,0,.5);
+}
+
+#logo{
+     margin-left: -15px;
+     cursor: pointer;
+}
+
+#login{
+      position: absolute;
+      border-radius:7px;
+      height: 40px;
+      width: 200px;
+      right: 15px;
+      border: none;
+      transition: all 0.6s ease 0s;
+      display: flex;
+      align-items: center; 
+      background-color: rgba(255,99,71,1);
+}
+
+#logged{
+    position: absolute;
+    border-radius: 7px;
+    /* background:linear-gradient(to right,#3f5efb,greenyellow); */
+    background:linear-gradient(white,green,yellow);
+    border: none;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: bolder;
+    outline: none;
+    height: 40px;
+    top: 10px;
+    cursor: pointer;
+    width: 140px;
+    transition: all 0.5s ease;
+    right: 15px;
+    display: none;
+}
+
+#check{
+    color: black;
+    transition: all 0.5s ease;
+}
+
+#check:hover{
+   color:red;
+}
+
+#logged:hover{
+     color: red;
+}
+
+     /* //SIGNED */
+
+#signed{
+    position: absolute;
+    border-radius: 7px;
+    /* background:linear-gradient(to right,#3f5efb,greenyellow); */
+    background:linear-gradient(white,green,yellow);
+    border: none;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    outline: none;
+    height: 40px;
+    top: 10px;
+    width: 140px;
+    right: 15px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: none;
+}
+
+#check2{
+     color: black;
+     transition: all 0.5s ease;
+}
+
+#check2:hover{
+    color:red;
+}
+
+#signed:hover{
+      color: red;
+}
+
+
+#user{
+    color: yellow;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 0.6s ease 0s;
+}
+
+#login:hover{
+    box-shadow: 1px 2px 2px 2px;
+}
+
+#log{
+    cursor: pointer;
+    font-weight: bold;
+    /* margin-top: 16px; */
+    transition: all 0.5s ease 0.1s;
+}
+
+#user:hover{
+    color: blue;
+}
+
+#log:hover{
+    color: white;
+}
+
+
+#art2{
+    z-index: 1;
+    position: absolute;
+    right: 28px;
+    height: 100px;
+    width: 160px;
+    text-align: center;
+    margin-top:60px;
+    position: fixed;
+    display: none;
+
+}
+
+.logs{
+    background-color:darkblue;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top:3px;
+    transition: all 0.4s ease 0s;
+    border-radius: 10px;
+    height:30px;
+}
+
+.logs:hover{
+            color: yellow;
+            transform: scale(1.1,1.1);
+}
+
+
+/* //LOGIN  AND SIGNUP */
+
+#logmain{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#openlogin{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+    background:linear-gradient(to right,#3f5efb,#fc466b);
+    opacity: 0.9;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inlogin{
+    height: 25rem;
+    width:28rem;
+    display: flex;
+    flex-direction:column;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+
+#logpage{
+    font-size:45px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: .9;
+}
+
+.label{
+       font-size: 20px;
+       color: white;
+       margin-left: 10%;
+       text-shadow: 2px,2px,4px rgba(0,0,0,.2);
+}
+
+.input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom:1px solid  rgba(255,255,255,0.6);
+    opacity: .9 ;
+}
+
+::placeholder{
+    color: black;
+}
+
+
+#under_login{
+    width: 50%;
+    transition:all 0.3s ease 0.1s;
+    margin: 3% auto;
+    font-size: 15px;
+    background: rgba(255,255,255,0.06);
+    border: none;
+    outline:none;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius:20px;
+    box-shadow: rgba(31,38,135,.37);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    
+}
+
+#forget{
+    font-size:12px;
+    text-align: center;
+    color: black;
+}
+
+#under_login:hover{
+    background-color: black;
+}
+
+#xmark1{
+    font-size:40px;
+    color: black;
+    position: absolute;
+    margin-top:-380px;
+    margin-left:430px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#xmark1:hover{
+       color: white;
+}
+
+#logsuccess{
+    font-size:x-large;
+    font-weight: bolder;
+    color:greenyellow;
+    text-shadow: 1px 0px black;
+    position: absolute;
+    top: 0px;
+    margin-top:70px;
+    letter-spacing: 3px;
+    display: none;
+
+}
+
+#exitlog{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 35px;
+    margin-top:500px;
+    width: 120px;
+    border-radius: 15px;
+    background:linear-gradient(to right,red,white);
+    border-left: 2px solid black;
+    border-top: 1px solid black; 
+    transition: 0.3s;   
+}
+
+#exitlog:hover{
+        transform: scale(1.1,1.1);
+}
+
+/* //SIGNUP */
+
+#logmain2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#openlogin2{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+    background:linear-gradient(to right,#3f5efb,#fc466b);
+    opacity: 0.9;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+#inlogin2{
+    height: 25rem;
+    width:28rem;
+    display: flex;
+    flex-direction:column;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+
+#logpage2{
+    font-size:45px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: .9;
+}
+
+.label2{
+       font-size: 20px;
+       color: white;
+       margin-left: 10%;
+       text-shadow: 2px,2px,4px rgba(0,0,0,.2);
+}
+
+.input2{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom:1px solid  rgba(255,255,255,0.6);
+    opacity: .9 ;
+}
+
+#under_login2{
+    width: 50%;
+    transition:all 0.3s ease 0.1s;
+    margin: 3% auto;
+    font-size: 15px;
+    background: rgba(255,255,255,0.06);
+    border: none;
+    outline:none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 30px;
+    border-radius:20px;
+    box-shadow: rgba(31,38,135,.37);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    
+}
+
+#forget2{
+    font-size:12px;
+    text-align: center;
+    color: black;
+}
+
+#under_login2:hover{
+    background-color: black;
+}
+
+#xmark2{
+    font-size:40px;
+    color: black;
+    position: absolute;
+    margin-top:-380px;
+    margin-left:430px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#xmark2:hover{
+       color: white;
+}
+
+#signupsuccess2{
+    font-size:x-large;
+    font-weight: bolder;
+    margin-left:15px;
+    color:greenyellow;
+    text-shadow: 1px 0px black;
+    position: absolute;
+    top: 0px;
+    margin-top:63px;
+    letter-spacing: 3px;
+    display: none;
+
+}
+
+#exitlog2{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 35px;
+    margin-top:500px;
+    width: 120px;
+    border-radius: 15px;
+    background:linear-gradient(to right,yellow,white);
+    border-left: 2px solid black;
+    border-top: 1px solid black;
+    transition: 0.3s;    
+}
+
+#exitlog2:hover{
+    transform: scale(1.1,1.1);
+}
+
+#airimage{
+    height: 625px;
+    width: 100%;
+    background-image:url("../img/23759-air-india-express-fleet\ bootsrtestgsd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome{
+    position:absolute;
+    color: black;
+    margin-top:130px;
+    margin-left:260px; 
+    letter-spacing: 3px;
+    font-size: 2.5em;
+    color: #fff;
+    font-weight:bolder;
+    background-color: rgba(0,0,0,0.6); 
+    font-family: 'Kanit', sans-serif;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.9); 
+    border: none; 
+    outline: none;
+    text-align: center;
+    border-radius:10px; 
+    width: 900px;
+    transition: 0.5s;
+}
+
+#main:hover #welcome
+{
+    transform: scale(1.1,1.1);
+    color:#fff;
+    text-shadow: 0 0 20px #fff;
+}
+
+.routecontainer{
+    padding: 15px 9%;
+    padding-bottom: 50px;
+}
+
+
+
+.boxcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.routesec{
+    height: 700px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.routesec{
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    transition: 0.4s;
+    letter-spacing: 3px;
+    /* padding: 30px 20px; */
+}
+
+#routeh2{
+       text-align: center; 
+       padding-top: 40px;  
+       padding-bottom: 15px;
+       color: #fff;
+       text-shadow: 0 5px 10px rgba(0,0,0,.2);
+       font-size: 40px;     
+}
+
+.routesec:hover{
+        box-shadow:0px 10px 15px rgba(0,0,0,.3);
+        transform: scale(1.02);
+}
+
+.topimg{
+    height:300px;
+    width: 100%;
+    border-radius: 5px;
+}
+.bottomimg{
+    height:308.5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.destination{
+    transition:0.4s;
+    color: #fff;
+}
+
+.routesec:hover .destination{
+    text-shadow: 0 0 20px #fff;
+}
+
+#lastroute{
+    margin-left: 260px;
+}
+
+#pass{
+    text-decoration: underline;
+    padding-top: 50px;
+    padding-left: 300px;    
+}
+
+
+
+       /* TICKETBOOKING*/
+
+#ticketbooking{
+    display: none;
+    background-image: url("https://wallpapercave.com/wp/wp4128800.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 900px;
+}
+
+
+#innerbook{
+    height:600px;
+    width: 1200px;
+    border: none;
+    outline: none;
+    background-color:rgba(255,255,255,.3);
+    margin-left:80px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#bookh2{
+       text-align: center;
+       padding-top: 60px;
+       padding-bottom:30px;
+       color: #fff;
+       text-shadow: 0 5px 10px rgba(0,0,0,.2);
+       font-size: 40px;
+}
+
+#innerbook:hover{
+    box-shadow:rgba(0,0,0,0.35) 0px 0px 55px 15px;
+}
+
+
+#radios{
+  display:flex;
+  padding-top: 25px;
+  padding-left: 25px;
+  gap: 15px;
+}
+
+#oneradio{
+    cursor: pointer;
+    background:rgba(232,241,252,.7);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    height: 39px;
+    color: rgb(34,118,227);
+    width: 130px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 7px;
+}
+
+#roundradio{
+    cursor: pointer;
+    color: rgba(125,125,125);
+    font-weight: bold;
+    height: 39px;
+    width:155px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+#roundradio:hover{
+    background:rgba(0,0,0,.2);
+}
+
+input[type=radio]{
+    transform: scale(1.2);
+}
+            /* INSIDE FROM TO */
+#fromtomaingrid{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    align-items: center;
+    padding-top:18px;
+}
+            /* FROM BRODER       */
+#fromborder{
+    margin-left:70px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#fromborder:hover{
+    border-color:black;
+}
+
+#selectfrom{
+     border: none;
+     display: flex;
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     cursor: pointer;
+     text-shadow: 1px 0px black;
+}
+             /* TO BORDER */
+#toborder{
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#toborder:hover{
+    border-color:black;
+}
+
+#selectto{
+     border: none;
+     display: flex;
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+             /* DATE */
+#date{
+    margin-left: 50px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#dateinput{
+     border: none;
+     display: flex;
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#date:hover{
+    border-color: black;
+}
+
+        /* TRAVELLERS */
+
+#travellers{
+    display: none; 
+    margin-left: 50px;
+    padding: 10px 15px;
+    width:200px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#travellersinput{
+     border: none;
+    
+     display: flex;
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#travellers:hover{
+    border-color: black;
+}
+
+        /* ADULTS */
+#passengerssec{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    align-items: center;
+    padding-top:40px;
+    padding-left: 20px;
+
+}
+
+#adult{
+    margin-left: 50px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#adultinput{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+}
+
+#adult:hover{
+    border-color: black;
+}
+
+          /* Childrens */
+        
+#child{
+    margin-left:180px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#childinput{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#child:hover{
+        border-color: black;
+}
+          /* INFANTS */
+#infants{
+    margin-left: 50px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#infantsinput{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#infants:hover{
+        border-color: black;
+}
+       /* TRAVEL CLASS */
+#classes{
+    margin-left: 25px;
+    padding: 10px 3px;
+    width:190px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+        
+#classoption{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#classes:hover{
+        border-color: black;
+}
+
+        /* TELEPHONE */
+
+#phno{
+    padding: 10px 15px;
+    width:190px;
+    border-radius: 10px;
+    margin-top: 45px;
+    font-size:20px;
+    font-weight:bold;
+    color: blue;
+    cursor: pointer;
+}
+        
+#phnoinput{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#phno:hover{
+        border-color: black;
+}
+            /*USER NAME */ 
+#name{
+    padding: 10px 15px;
+    width:190px;
+    border-radius: 10px;
+    margin-top: 45px;
+    font-size:20px;
+    font-weight:bold;
+    color: blue;
+    cursor: pointer;
+}
+        
+#nameinput{
+     border: none;
+     display: flex;
+     outline: none;
+     width:250px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#name:hover{
+    border-color: black;
+}
+
+#ph_total{
+    display:flex;
+    gap:15px;
+    margin-top:5px;
+    margin-left:320px;
+}
+   /* TICKET BOOKING BUTTON*/
+
+#booktheticket{
+    position: absolute;
+    border:none;
+    outline: none;
+    border-radius:80px;
+    height: 70px;
+    width: 230px;
+    background-color: red;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    margin-left: -120px;
+    margin-top:40px;
+}
+
+#booktheticket:hover{
+    background-color: rgb(0,0,0);
+}
+
+
+      /* BOOKTICKET-2
+         BOOKTICKET-2
+         BOOKTICKET-2 */
+
+#innerbook2{
+    display:none;
+    height:600px;
+    width: 1200px;
+    border: none;
+    outline: none;
+    background-color:rgba(255,255,255,.3);
+    margin-left:80px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#bookh2{
+       text-align: center;
+       padding-top: 60px;
+       padding-bottom:30px;
+       color: #fff;
+       text-shadow: 0 5px 10px rgba(0,0,0,.2);
+       font-size: 40px;
+}
+
+#innerbook2:hover{
+    box-shadow:rgba(0,0,0,0.35) 0px 0px 55px 15px;
+}
+
+
+#radios2{
+  display:flex;
+  padding-top: 25px;
+  padding-left: 25px;
+  gap: 15px;
+}
+
+#oneradio2{
+    cursor: pointer;
+    color: rgba(125,125,125);
+    font-weight: bold;
+    height:39px;
+    width:130px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+#oneradio2:hover{
+    background:rgba(0,0,0,.2);
+}
+
+#roundradio2{
+    cursor: pointer;
+    background:rgba(232,241,252,.7);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    height: 39px;
+    color: rgb(34,118,227);
+    width: 155px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding-top:7px;
+}
+
+
+input[type=radio]{
+    transform: scale(1.2);
+}
+            /* INSIDE FROM TO */
+#fromtomaingrid2{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    align-items: center;
+    padding-top:40px;
+}
+            /* FROM BRODER       */
+#fromborder2{
+    margin-left:70px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#fromborder2:hover{
+    border-color:black;
+}
+
+#selectfrom2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     cursor: pointer;
+     text-shadow: 1px 0px black;
+}
+             /* TO BORDER */
+#toborder2{
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#toborder2:hover{
+    border-color:black;
+}
+
+#selectto2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+             /* DATE */
+#date2{
+    margin-left: 50px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#dateinput2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#date2:hover{
+    border-color: black;
+}
+        /* RETURN DATE */
+
+#returndate2{
+    margin-left: 50px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+#returndateinput2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#returndate2:hover{
+    border-color: black;
+}
+
+        /* TRAVELLERS */
+
+#travellers2{
+    display: none;
+    margin-left:50px;
+    padding: 10px 15px;
+    width:200px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#travellersinput2{
+     border: none;
+     display: flex;
+     
+     outline: none;
+     width:170px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#travellers2:hover{
+    border-color: black;
+}
+
+        /* ADULTS */
+#passengerssec2{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    align-items: center;
+    padding-top:40px;
+    padding-left:-5px;
+
+}
+
+#adult2{
+    margin-left:170px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#adultinput2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+}
+
+#adult2:hover{
+    border-color: black;
+}
+
+          /* Childrens */
+        
+#child2{
+    margin-left: 50px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#childinput2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#child2:hover{
+        border-color: black;
+}
+          /* INFANTS */
+#infants2{
+    margin-left: 50px;
+    padding: 10px 15px;
+    width:210px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+#infantsinput2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#infants2:hover{
+        border-color: black;
+}
+       /* TRAVEL CLASS */
+#classes2{
+    margin-left: 25px;
+    padding: 10px 3px;
+    width:190px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    height: 90px;
+}
+        
+#classoption2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#classes2:hover{
+        border-color: black;
+}
+
+        /* TELEPHONE */
+
+#phno2{
+    padding: 10px 15px;
+    width:190px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight:bold;
+    color: blue;
+    cursor: pointer;
+}
+        
+#phnoinput2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#phno2:hover{
+        border-color: black;
+}
+        /* NAME FIELD */
+#name2{
+    padding: 10px 15px;
+    width:190px;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight:bold;
+    color: blue;
+    cursor: pointer;
+}
+        
+#nameinput2{
+     border: none;
+     display: flex;
+     outline: none;
+     width:210px;
+     font-size:15px;
+     letter-spacing:6px;
+     text-align: center;
+     margin-bottom: 8%;
+     border: none;
+     outline: none;
+     background:transparent;
+     color: black;
+     text-shadow: 1px 0px black;
+     cursor: pointer;
+}
+
+#name2:hover{
+        border-color: black;
+}
+
+#booktheticket2{
+    position: absolute;
+    border:none;
+    outline: none;
+    border-radius:80px;
+    height: 70px;
+    width: 230px;
+    background-color: red;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    margin-left: -120px;
+    margin-top:72px;
+}
+
+#booktheticket2:hover{
+    background-color: rgb(0,0,0);
+}
+
+
+
+#ph_total2{
+    display:flex;
+    gap:15px;
+    margin-top: 45px;
+    margin-left: 200px;
+}
+         /* ALERT */
+.inputunder{
+    display:inline-block;
+    font-size:12.5px;
+    color: #aa076b;
+    text-shadow: 1px 1px black;
+    font-weight:bolder;
+    text-transform: none;
+    letter-spacing:3px;
+    margin-left: 60px;
+}
+
+#adult{
+    margin-top:20px;
+}
+
+#classes{
+    margin-top: -22px;
+}
+
+#childunder1{
+    margin-left:185px;
+}
+
+.under{
+    display: block;
+}
+
+        /* UNDERALERT */
+.inputunder2{
+    display:inline-block;
+    font-size:12.5px;
+    color: #aa076b;
+    text-shadow: 1px 1px black;
+    font-weight:bolder;
+    text-transform: none;
+    letter-spacing:3px;
+    margin-left: 60px;
+}
+
+#inputunderadult2{
+    margin-left:180px;
+}
+/* 
+#classes2{
+    margin-top: -22px;
+} */
+
+/*#childunder1_2{
+    margin-left:185px;
+} */
+
+.under2{
+    display: block;
+}
+
+
+
+        /* TICKETDIVITION */
+
+#finalticket{
+    height:1500px; 
+    width: 100%; 
+    background:linear-gradient(60deg,
+    #3f5efb,#aa076b);   
+    display: none;
+}
+
+#yourtic{
+    padding-top:50px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;    
+    text-shadow: 0 0 30px #fff;
+}
+
+#innerbox{
+    height: 1150px;
+    width: 1000px;
+    border:none;
+    outline:none;
+    background: #aa076b;
+    /* background-color:#fff; */
+    margin-top: 45px;
+    margin-left:190px;
+    border-radius:20px;
+    border: 4px solid black;
+}
+
+.ticdetails{
+    margin-left:200px;
+    padding-top:40px;
+    font-size:27px;
+    font-weight: bolder;
+    color: #fff;
+    text-shadow: 1px 0px #222;
+    letter-spacing: 6px;
+   
+}
+
+#download{
+    position: absolute;
+    background: #222;
+    border:none;
+    outline:none;
+    /* border-radius:50px; */
+    height:50px;
+    width:700px;
+    font-size:15px;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    letter-spacing:13px;
+    word-spacing:15px;
+    color: white;
+    margin-left:170px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:68px;
+    border-radius: 5px;
+    /* padding-left: 10px; */
+}
+
+        /* ABOUT PAGE */
+#aboutpage{
+    height:400px;
+    background-color:rgb(36,37,37);
+}
+
+#abouth1{
+    text-align: center; 
+    padding-top: 40px;  
+    margin-left:200px;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 40px; 
+}
+
+#aboutlogo{
+    margin-top: -115px;
+    margin-left:30px;
+    border-left: none;
+    border-bottom: none;
+    /* border: 1px solid black; */
+    border-right:2px solid #ccc;
+    height: 400px;
+    width: 250px;
+}
+
+#logo1{
+    margin-top: 80px;
+    margin-left: -50px;
+}
+
+#rs2{
+    font-size:38px;
+    letter-spacing:4px;
+    font-weight:bolder;
+    color:yellow;
+    text-shadow:3px 3px #222;
+    font-family: 'Bruno Ace', cursive; 
+    margin-left: -5px; 
+}
+
+#airways2{
+     font-size: 20px;
+     letter-spacing:4px;
+     font-weight:bold;
+     margin-top:15px;
+     margin-left:5px;
+     color: #fff;
+}
+
+#airs{
+    display:flex;
+}
+
+
+#notes{
+    margin-left:270px;
+    color:white;
+    margin-top: -150px;
+    width:1000px;
+    letter-spacing: 3px;
+    word-spacing:1px;
+    text-transform:none;
+}
+
+#follow{
+    display: flex;
+    width:500px;
+    margin-top:30px;
+    margin-left:590px;
+    text-transform: none;
+    font-size: 20px;
+    color: white;
+}
+
+#followmore{
+    width:500px;
+    margin-top:16px;
+    margin-left:650px;
+    text-transform: none;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+#phonecall{
+    margin-top:6px;
+}
+
+#fonts{
+    font-size:30px;
+    margin-left:690px;
+    width:600px;
+}
+
+#lastmail{
+    font-size: medium;
+    margin-left:600px;
+    color: blue;
+    background-color: #fff;
+    border-radius: 5px;
+    text-transform: none;
+}
+
+
+        /* PLEASE LOGIN */
+#pls{
+    background:black;
+    height:250px;
+    text-align: center;
+    padding-top: 100px;
+    text-transform: none;
+}
+
+#plslogin{
+    text-transform: none;
+    font-size:larger;
+    font-weight:bolder;
+    color:white;
+    text-shadow: rgba(255,255,255,0.6);
+    background: rgba(0,30,255,.5);
+    width:480px;
+    margin-left:460px;
+    height:70px;
+    padding-top:20px;
+    border-radius:8px;
+    word-spacing:1px;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
